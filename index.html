@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Cursos gratuitos de formación profesional con certificación oficial en el CFP N°408."
+    />
+    <title>CFP N°408 | Formación profesional</title>
+    <link rel="stylesheet" href="styles/hero-navbar.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .preview-section {
+        display: grid;
+        min-height: 65vh;
+        align-content: center;
+        padding: clamp(3rem, 8vw, 7rem);
+        scroll-margin-top: 5rem;
+      }
+
+      .preview-section:nth-of-type(even) {
+        background: #f8f9fa;
+      }
+
+      .preview-section__eyebrow {
+        margin: 0 0 0.75rem;
+        color: #e6007e;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .preview-section h2 {
+        max-width: 40rem;
+        margin: 0;
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        letter-spacing: -0.06em;
+      }
+
+      .preview-section p:last-child {
+        max-width: 34rem;
+        line-height: 1.7;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+    <script src="scripts/hero-navbar.js" defer></script>
+  </head>
+  <body>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="hero__eyebrow">Formación profesional · CFP N°408</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__title-main">CFP</span>
+          <span class="hero__title-number">408</span>
+        </h1>
+        <p class="hero__description">
+          Cursos gratuitos de formación profesional con certificación oficial
+        </p>
+        <a class="hero__cta" href="#cursos">
+          Ver cursos
+          <span class="hero__cta-arrow" aria-hidden="true">↗</span>
+        </a>
+        <p class="hero__note">Aprendé algo nuevo. Abrí tu próximo camino.</p>
+      </div>
+
+      <div class="hero__gallery" role="region" aria-label="Cursos de formación">
+        <div class="hero__lane hero__lane--up">
+          <div class="hero__track">
+            <div class="hero__track-group">
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Diseño Gráfico 1</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Diseño Gráfico 2</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Diseño de Página Web</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Gestión de Redes: Fotoproducto</figcaption>
+                </figure>
+              </article>
+            </div>
+            <div class="hero__track-group" aria-hidden="true">
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Diseño Gráfico 1</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Diseño Gráfico 2</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Diseño de Página Web</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Gestión de Redes: Fotoproducto</figcaption>
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__lane hero__lane--down">
+          <div class="hero__track">
+            <div class="hero__track-group">
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Gestión de Redes: Video</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Operador de Software</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1585247226801-bc613c441316?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Serigrafía</figcaption>
+                </figure>
+              </article>
+            </div>
+            <div class="hero__track-group" aria-hidden="true">
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Gestión de Redes: Video</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Operador de Software</figcaption>
+                </figure>
+              </article>
+              <article class="hero__course-card">
+                <figure class="hero__course-figure">
+                  <img src="https://images.unsplash.com/photo-1585247226801-bc613c441316?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" />
+                  <figcaption>Serigrafía</figcaption>
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+        <span class="hero__gallery-stamp" aria-hidden="true">Aprender<br /> transforma</span>
+      </div>
+    </section>
+
+    <header class="site-nav">
+      <a class="site-nav__brand" href="#inicio" aria-label="CFP 408, inicio">
+        <span class="site-nav__brand-mark" aria-hidden="true">408</span>
+        <span class="site-nav__brand-name">Centro de Formación<br />Profesional</span>
+      </a>
+
+      <nav class="site-nav__desktop" aria-label="Navegación principal">
+        <a href="#cursos">Cursos</a>
+        <a href="#institucional">Institucional</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#inscripcion">Inscripción</a>
+      </nav>
+      <a class="site-nav__cta" href="#cursos">Encontrá tu curso <span aria-hidden="true">↗</span></a>
+
+      <button
+        class="site-nav__toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="site-nav-mobile-links"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav__mobile-nav" id="site-nav-mobile-links" aria-label="Navegación móvil" hidden="hidden">
+        <a href="#cursos">Cursos</a>
+        <a href="#institucional">Institucional</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#inscripcion">Inscripción</a>
+        <a class="site-nav__mobile-cta" href="#cursos">Encontrá tu curso <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="preview-section" id="cursos" aria-labelledby="cursos-title">
+        <p class="preview-section__eyebrow">Oferta formativa</p>
+        <h2 id="cursos-title">Cursos para abrir nuevos caminos.</h2>
+        <p>Esta sección es una muestra temporal para probar la navegación. Aquí se integrará la oferta de cursos.</p>
+      </section>
+      <section class="preview-section" id="institucional" aria-labelledby="institucional-title">
+        <p class="preview-section__eyebrow">Quiénes somos</p>
+        <h2 id="institucional-title">Formación que transforma.</h2>
+        <p>Esta sección es una muestra temporal para probar la navegación. Aquí se integrará la información institucional.</p>
+      </section>
+      <section class="preview-section" id="testimonios" aria-labelledby="testimonios-title">
+        <p class="preview-section__eyebrow">Experiencias reales</p>
+        <h2 id="testimonios-title">Historias que inspiran.</h2>
+        <p>Esta sección es una muestra temporal para probar la navegación. Aquí se integrarán testimonios autorizados.</p>
+      </section>
+      <section class="preview-section" id="inscripcion" aria-labelledby="inscripcion-title">
+        <p class="preview-section__eyebrow">Tu próximo paso</p>
+        <h2 id="inscripcion-title">Empezá tu camino.</h2>
+        <p>Esta sección es una muestra temporal para probar la navegación. Aquí se integrará el proceso de inscripción.</p>
+      </section>
+    </main>
+  </body>
+</html>
