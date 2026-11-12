@@ -1,0 +1,257 @@
+.institutional-page {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+.institutional {
+  background: var(--color-bg-main, #FFFFFF);
+  color: var(--color-text, #1A1A1A);
+  padding: clamp(3rem, 7vw, 6rem) 1.25rem;
+}
+
+.institutional__container {
+  margin: 0 auto;
+  max-width: 72rem;
+}
+
+.institutional__header {
+  margin: 0 auto 2.5rem;
+  max-width: 48rem;
+  text-align: center;
+}
+
+.institutional__brand {
+  align-items: center;
+  display: inline-flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.institutional__brand-mark {
+  align-items: center;
+  background: var(--color-primary, #E6007E);
+  border: 0.25rem solid var(--color-accent, #FFED00);
+  border-radius: 50%;
+  color: var(--color-bg-main, #FFFFFF);
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 800;
+  height: 3.25rem;
+  justify-content: center;
+  width: 3.25rem;
+}
+
+.institutional__brand-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.institutional__brand-copy strong {
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+}
+
+.institutional__brand-copy span {
+  font-size: 0.8rem;
+}
+
+.institutional__eyebrow {
+  color: var(--color-primary, #E6007E);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.institutional__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.institutional__intro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1rem 0 0;
+}
+
+.institutional__link-note {
+  color: var(--color-text, #1A1A1A);
+  font-size: 0.9rem;
+  margin: 0.75rem 0 0;
+}
+
+.institutional__group-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.institutional__faculty-section {
+  margin-top: 3.5rem;
+}
+
+.institutional__team {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.institutional__leadership {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 auto;
+  max-width: 48rem;
+}
+
+.institutional__leadership .institutional__card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.institutional__faculty .institutional__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.institutional__faculty .institutional__card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.institutional__card {
+  background: var(--color-bg-main, #FFFFFF);
+  border: 1px solid var(--color-bg-alt, #F8F9FA);
+  border-radius: 1.25rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(26, 26, 26, 0.07);
+  min-width: 0;
+  overflow: hidden;
+}
+
+.institutional__photo-placeholder {
+  align-items: center;
+  aspect-ratio: 4 / 3;
+  background: var(--color-bg-alt, #F8F9FA);
+  border-bottom: 0.25rem solid var(--color-accent, #FFED00);
+  color: var(--color-text, #1A1A1A);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.institutional__avatar {
+  fill: none;
+  height: 4rem;
+  stroke: var(--color-secondary, #00AEEF);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  width: 4rem;
+}
+
+.institutional__photo-placeholder span {
+  font-size: 0.85rem;
+}
+
+.institutional__card-content {
+  padding: 1.25rem;
+}
+
+.institutional__name {
+  font-size: 1.2rem;
+  line-height: 1.35;
+  margin: 0 0 0.75rem;
+  text-align: center;
+}
+
+.institutional__role {
+  background: var(--color-accent, #FFED00);
+  border: 0;
+  border-radius: 999px;
+  color: var(--color-text, #1A1A1A);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.5rem 1rem;
+  align-self: center;
+  transition: background-color 160ms ease;
+}
+
+.institutional__role:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.institutional__role:not(:disabled):hover {
+  background: var(--color-secondary, #00AEEF);
+}
+
+.institutional__role:focus-visible {
+  outline: 3px solid var(--color-secondary, #00AEEF);
+  outline-offset: 3px;
+}
+
+.institutional__bio {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 1rem 0 0;
+}
+
+.institutional__course {
+  background: var(--color-bg-alt, #F8F9FA);
+  border-left: 0.25rem solid var(--color-secondary, #00AEEF);
+  border-radius: 0.25rem 0.75rem 0.75rem 0.25rem;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 8rem;
+  flex-direction: column;
+  font-size: 0.95rem;
+  justify-content: center;
+  line-height: 1.5;
+  margin: auto 0 0;
+  padding: 0.75rem;
+}
+
+.institutional__course-label {
+  color: var(--color-primary, #E6007E);
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 56.25rem) {
+  .institutional__team {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .institutional {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .institutional__header {
+    margin-bottom: 2rem;
+  }
+
+  .institutional__team {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .institutional__role {
+    transition: none;
+  }
+}

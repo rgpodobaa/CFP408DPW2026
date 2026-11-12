@@ -141,6 +141,8 @@ El detalle de curso será una página extra a la que se accede desde una tarjeta
 
 **Entrega del estudiante:** sección con `id="institucional"`, estructura semántica y datos revisados por el centro.
 
+La demostración funcional se entrega en `institucional.html`, con una estructura de página completa que enlaza `institucional.css` y carga `institucional.js` con `defer`. La presentación separa el equipo directivo del equipo docente e indica el curso asignado a cada docente. Para integrar la sección en otra página, mover únicamente el contenido de `<section class="institutional">` a su `<main>` y agregar los enlaces a la hoja de estilos y el script en el `<head>`. Los botones de cargo usan `data-destino` con el `id` de una sección existente (por ejemplo, `data-destino="cursos"`); mientras el valor esté vacío permanecen desactivados. Si se configura un destino que no existe, el script informa el error en la consola y mantiene el botón desactivado.
+
 ### 4.6 Testimonios de egresados
 
 **Propósito:** compartir experiencias que ayuden a comprender el impacto de la formación.
