@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conocé los detalles de los cursos del Centro de Formación Profesional N°408 de Lomas de Zamora.">
+    <title>Detalles del curso | CFP N°408</title>
+    <link rel="stylesheet" href="curso.css">
+    <script src="curso.js" defer></script>
+  </head>
+  <body class="course-page">
+    <a class="course-skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="course-header">
+      <a class="course-brand" href="index.html" aria-label="CFP N°408, inicio">
+        <span class="course-brand__mark" aria-hidden="true">408</span>
+        <span class="course-brand__name">Centro de Formación<br>Profesional N°408</span>
+      </a>
+      <nav class="course-nav" aria-label="Navegación principal">
+        <a href="index.html#cursos">Cursos</a>
+        <a href="index.html#institucional">Institucional</a>
+        <a class="course-nav__cta" href="index.html#inscripcion">Inscripción</a>
+      </nav>
+    </header>
+
+    <main id="contenido" class="course-main">
+      <nav class="course-breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html#cursos">Oferta de cursos</a>
+        <span aria-hidden="true">/</span>
+        <span id="breadcrumb-course" aria-current="page">Detalles del curso</span>
+      </nav>
+
+      <section id="course-content" class="course-content" aria-labelledby="course-title">
+        <div class="course-hero">
+          <p class="course-eyebrow">Formación profesional · Lomas de Zamora</p>
+          <h1 id="course-title">Detalles del curso</h1>
+          <p id="course-description" class="course-hero__description"></p>
+          <a class="course-button" href="index.html#inscripcion">Consultar inscripción</a>
+        </div>
+
+        <section class="course-facts" aria-label="Información del curso">
+          <h2 class="course-section-title">Información general</h2>
+          <dl id="course-facts" class="course-facts__grid"></dl>
+        </section>
+
+        <div class="course-details-grid">
+          <section class="course-panel" aria-labelledby="course-learning-title">
+            <p class="course-panel__eyebrow">Tu recorrido</p>
+            <h2 id="course-learning-title">¿Qué vas a aprender?</h2>
+            <p id="course-learning" class="course-panel__copy"></p>
+          </section>
+
+          <section class="course-panel course-panel--soft" aria-labelledby="course-tools-title">
+            <p class="course-panel__eyebrow">Recursos</p>
+            <h2 id="course-tools-title">Tecnologías y herramientas</h2>
+            <p id="course-tools" class="course-panel__copy"></p>
+          </section>
+        </div>
+
+        <section id="course-teacher-panel" class="course-teacher" aria-labelledby="course-teacher-title">
+          <div class="course-teacher__icon" aria-hidden="true"> CFP </div>
+          <div>
+            <p class="course-panel__eyebrow">Equipo docente</p>
+            <h2 id="course-teacher-title">Docente a cargo</h2>
+            <p id="course-teacher" class="course-teacher__name"></p>
+          </div>
+        </section>
+
+        <div class="course-bottom-cta">
+          <div>
+            <h2>¿Te interesa este curso?</h2>
+            <p>Consultá los pasos de inscripción y cómo continuar.</p>
+          </div>
+          <a class="course-button course-button--light" href="index.html#inscripcion">Ver inscripción</a>
+        </div>
+      </section>
+
+      <section id="course-not-found" class="course-not-found" aria-labelledby="not-found-title" hidden>
+        <p class="course-eyebrow">CFP N°408 · Oferta formativa</p>
+        <h1 id="not-found-title">No encontramos ese curso</h1>
+        <p>El enlace puede ser incorrecto o el curso ya no estar disponible en esta página.</p>
+        <a class="course-button" href="index.html#cursos">Volver a la oferta de cursos</a>
+      </section>
+    </main>
+
+    <footer class="course-footer">
+      <a href="index.html#cursos">← Volver a la oferta de cursos</a>
+      <p>Centro de Formación Profesional N°408 · Lomas de Zamora</p>
+    </footer>
+  </body>
+</html>
