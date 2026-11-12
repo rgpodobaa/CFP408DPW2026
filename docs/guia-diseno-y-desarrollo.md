@@ -106,6 +106,10 @@ El detalle de curso será una página extra a la que se accede desde una tarjeta
 
 **Entrega del estudiante:** sección con `id="cursos"`, tarjetas reutilizables visualmente y destino válido para cada enlace.
 
+**Implementación inicial:** `cursos.html` contiene una página independiente con ocho tarjetas, fotografías locales ilustrativas y enlaces para iniciar la consulta de inscripción. Las imágenes de serigrafía e impresión 3D se atribuyen en la página según sus licencias Creative Commons; las demás son de Unsplash. Las descripciones son orientativas, no incluyen datos administrativos no confirmados y deben validarse con el centro antes de publicarse como oferta oficial. Los enlaces llevan a una sección informativa; no envían ni guardan datos personales. Habilidades Digitales y Modelado 3D se presentan por separado para completar las ocho tarjetas; confirmar que esta división coincide con la oferta del CFP.
+
+La disponibilidad de Modelado 3D se configura en `scripts/cursos.js` (`courseAvailability["modelado-3d"]`): usar `true` para mostrarlo vigente y `false` para indicar que no está vigente. Esta configuración estática no es un panel administrativo; integrar una fuente de disponibilidad protegida si luego se requiere edición desde la página.
+
 ### 4.4 Detalle del curso (página extra)
 
 **Propósito:** ofrecer la información necesaria para que una persona evalúe un curso y sepa cuál es el siguiente paso.
