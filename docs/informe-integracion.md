@@ -19,11 +19,11 @@ Cada sección fue guardada en su propia rama de Git. La tarea docente consistió
 
 | Rama de origen | Responsable/Sección | Componentes y Archivos Integrados |
 | :--- | :--- | :--- |
-| `origin/HeroSection` | **Navbar & Hero** | Barra de navegación responsive (`site-nav`) con menú hamburguesa accesible en móvil, y portada principal (`hero`) con animación continua de tarjetas de muestra y accesos directos. |
+| `origin/HeroSection` | **Navbar & Hero** | Barra de navegación responsive (`site-nav`) con menú hamburguesa accesible en móvil, y portada principal (`hero`) con animación continua de siete cursos destacados y accesos directos. |
 | `origin/tarjetas-cursos` | **Oferta de Cursos** | Grilla adaptable de 8 cursos (`courses__grid`) con imágenes ilustrativas optimizadas en `assets/cursos/` y lógica de estado/disponibilidad. |
 | `origin/Detalle-Curso` | **Página de Detalle** | Página independiente `curso.html` que lee dinámicamente el parámetro `?id=...` para mostrar horarios, sede, docente a cargo y contenidos. |
 | `origin/institucional` | **Institucional / Equipo** | Tarjetas del equipo directivo y docente con roles, fotos/avatares SVG y bios con estilo accesible. |
-| `origin/Testimonios/Inscripcion` | **Testimonios e Inscripción** | Tarjetas de experiencias de egresados (`#testimonios`) y guía paso a paso (01 al 04) con botón inteligente de preinscripción hacia Gmail (`#inscripcion`). |
+| `origin/Testimonios/Inscripcion` | **Opiniones, Sede e Inscripción** | Experiencias de egresados (`#testimonios`), ubicación del centro (`#sede`) y guía paso a paso (01 al 04) con botón inteligente de preinscripción hacia Gmail (`#inscripcion`). |
 | `origin/Footer` | **Pie de Página** | Footer institucional con ondas SVG dinámicas con los colores del CFP, datos de contacto, enlaces de anclaje y accesos a redes sociales. |
 
 ---
