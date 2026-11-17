@@ -6,42 +6,65 @@
     <meta name="description" content="Conocé los detalles de los cursos del Centro de Formación Profesional N°408.">
     <title>Detalles del curso | CFP N°408</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hero-navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/curso-detalle.css">
+    <script src="js/hero-navbar.js" defer></script>
     <script src="js/curso-detalle.js" defer></script>
   </head>
   <body class="course-page">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <header class="course-header">
-      <a class="course-brand" href="index.html" aria-label="CFP N°408, inicio">
-        <span class="course-brand__mark" aria-hidden="true">408</span>
-        <span class="course-brand__name">Centro de Formación<br>Profesional N°408</span>
+    <header class="site-nav">
+      <a class="site-nav__brand" href="index.html#inicio" aria-label="CFP 408, inicio">
+        <span class="site-nav__brand-mark" aria-hidden="true">408</span>
+        <span class="site-nav__brand-name">Centro de Formación<br>Profesional</span>
       </a>
-      <nav class="course-nav" aria-label="Navegación principal">
+      <nav class="site-nav__desktop" aria-label="Navegación principal">
         <a href="index.html#cursos">Cursos</a>
         <a href="index.html#institucional">Institucional</a>
         <a href="index.html#testimonios">Testimonios</a>
-        <a class="course-nav__cta" href="index.html#inscripcion">Inscripción</a>
+        <a href="index.html#inscripcion">Inscripción</a>
+      </nav>
+      <a class="site-nav__cta" href="index.html#cursos">Encontrá tu curso <span aria-hidden="true">↗</span></a>
+      <button
+        class="site-nav__toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="site-nav-mobile-links"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav__mobile-nav" id="site-nav-mobile-links" aria-label="Navegación móvil" hidden>
+        <a href="index.html#cursos">Cursos</a>
+        <a href="index.html#institucional">Institucional</a>
+        <a href="index.html#testimonios">Testimonios</a>
+        <a href="index.html#inscripcion">Inscripción</a>
+        <a class="site-nav__mobile-cta" href="index.html#cursos">Encontrá tu curso <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
     <main id="contenido" class="course-main">
-      <nav class="course-breadcrumb" aria-label="Ruta de navegación">
-        <a href="index.html#cursos">Oferta de cursos</a>
-        <span aria-hidden="true">/</span>
-        <span id="breadcrumb-course" aria-current="page">Detalles del curso</span>
-      </nav>
-
       <section id="course-content" class="course-content" aria-labelledby="course-title">
         <div class="course-hero">
-          <p class="course-eyebrow">Formación profesional · CFP N°408</p>
-          <h1 id="course-title">Detalles del curso</h1>
-          <p id="course-description" class="course-hero__description"></p>
-          <a class="course-button" href="index.html#inscripcion">Consultar inscripción</a>
+          <img id="course-image" class="course-hero__image" src="" alt="">
+          <div class="course-hero__shade"></div>
+          <div class="course-hero__content">
+            <a class="course-hero__back" href="index.html#cursos">← Oferta de cursos</a>
+            <p class="course-eyebrow">Formación profesional · CFP N°408</p>
+            <h1 id="course-title">Detalles del curso</h1>
+            <p id="course-description" class="course-hero__description"></p>
+            <a class="course-button" href="index.html#inscripcion">Consultar inscripción <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
 
         <section class="course-facts" aria-label="Información del curso">
-          <h2 class="course-section-title">Información general</h2>
+          <div class="course-section-heading">
+            <p class="course-panel__eyebrow">Lo que necesitás saber</p>
+            <h2 class="course-section-title">Información general</h2>
+          </div>
           <dl id="course-facts" class="course-facts__grid"></dl>
         </section>
 
@@ -55,21 +78,28 @@
           <section class="course-panel course-panel--soft" aria-labelledby="course-tools-title">
             <p class="course-panel__eyebrow">Recursos</p>
             <h2 id="course-tools-title">Tecnologías y herramientas</h2>
-            <p id="course-tools" class="course-panel__copy"></p>
+            <ul id="course-tools" class="course-tools" aria-label="Tecnologías y herramientas utilizadas"></ul>
+            <p id="course-tools-empty" class="course-tools__empty" hidden>
+              Las tecnologías y herramientas específicas se informarán próximamente.
+            </p>
           </section>
         </div>
 
         <section id="course-teacher-panel" class="course-teacher" aria-labelledby="course-teacher-title">
-          <div class="course-teacher__icon" aria-hidden="true"> CFP </div>
+          <div class="course-teacher__photo" aria-hidden="true">
+            <svg class="course-teacher__avatar" viewBox="0 0 64 64" focusable="false">
+              <circle cx="32" cy="22" r="12"></circle>
+              <path d="M10 58c1-13 9-20 22-20s21 7 22 20"></path>
+            </svg>
+            <span>Foto próximamente</span>
+          </div>
           <div class="course-teacher__content">
             <p class="course-panel__eyebrow">Equipo docente</p>
             <h2 id="course-teacher-title">Docente a cargo</h2>
             <p id="course-teacher" class="course-teacher__name"></p>
-            <div id="course-teacher-bio" class="course-teacher__bio" hidden>
-              <h3>Sobre el docente</h3>
-              <p id="course-teacher-description" class="course-teacher__description"></p>
-            </div>
+            <p id="course-teacher-description" class="course-teacher__description"></p>
           </div>
+          <span class="course-teacher__mark" aria-hidden="true">408</span>
         </section>
 
         <div class="course-bottom-cta">
@@ -89,9 +119,64 @@
       </section>
     </main>
 
-    <footer class="course-footer">
-      <a href="index.html#cursos">← Volver a la oferta de cursos</a>
-      <p>Centro de Formación Profesional N°408</p>
+    <footer class="site-footer">
+      <svg class="site-footer__wave" viewBox="0 0 520 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="#E6007E" d="M0 80C45 68 93 38 151 43c48 4 69 30 119 28 51-2 77-37 130-49 43-10 82-2 120 12v46H0V80Z"/>
+      </svg>
+      <svg class="site-footer__wave site-footer__wave--small" viewBox="0 0 520 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="#E6007E" fill-opacity=".72" d="M0 80V43C52 20 104 18 155 31c28 7 52 18 82 20-40 7-79 7-119-2C72 40 37 51 0 80Z"/>
+        <path fill="#00AEEF" fill-opacity=".75" d="M0 59V42c39-16 76-17 112-8 19 5 38 13 59 17-28 3-56 1-84-5C53 38 26 45 0 59Z"/>
+      </svg>
+      <div class="site-footer__container">
+        <div class="site-footer__main">
+          <section class="site-footer__institution" aria-labelledby="site-footer-title">
+            <div class="site-footer__brand">
+              <span class="site-footer__brand-mark" aria-hidden="true">408</span>
+              <div>
+                <p class="site-footer__eyebrow">Formación profesional</p>
+                <h2 class="site-footer__title" id="site-footer-title">Centro de Formación Profesional N°408</h2>
+              </div>
+            </div>
+            <address class="site-footer__contact">
+              <p><strong>Sede:</strong> Lomas de Zamora, Provincia de Buenos Aires</p>
+              <p><strong>Cursos:</strong> Gratuitos con certificación oficial</p>
+              <p><strong>Contacto:</strong> cfp408@abc.gob.ar</p>
+            </address>
+          </section>
+          <nav class="site-footer__navigation" aria-labelledby="site-footer-navigation-title">
+            <h2 class="site-footer__heading" id="site-footer-navigation-title">Navegación</h2>
+            <ul class="site-footer__link-list">
+              <li><a href="index.html#cursos">Cursos disponibles</a></li>
+              <li><a href="index.html#institucional">Equipo institucional</a></li>
+              <li><a href="index.html#testimonios">Testimonios de egresados</a></li>
+              <li><a href="index.html#inscripcion">Proceso de inscripción</a></li>
+            </ul>
+          </nav>
+          <section class="site-footer__social" aria-labelledby="site-footer-social-title">
+            <h2 class="site-footer__heading" id="site-footer-social-title">Encontranos en redes</h2>
+            <ul class="site-footer__social-list">
+              <li>
+                <a class="site-footer__social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Facebook del CFP 408">
+                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.3V13h2.8v8h3.4Z"/>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a class="site-footer__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram del CFP 408">
+                  <svg class="site-footer__social-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle class="site-footer__social-icon-dot" cx="17.5" cy="6.8" r="1"/>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
