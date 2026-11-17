@@ -8,6 +8,8 @@
     days: "Martes y jueves",
     hours: "14:00 a 17:00",
     teacher: "Rodrigo Podoba",
+    teacherDescription:
+      "Profesor de matemática e informática con experiencia en diseño web y lenguajes de programación como JavaScript y Python. Estudiante de la tecnicatura en programación en la Universidad Nacional Guillermo Brown.",
   },
   "gestion-redes-fotoproducto": {
     name: "Gesti├│n de redes: Fotoproducto",
@@ -18,6 +20,7 @@
     days: "Lunes y mi├®rcoles",
     hours: "14:00 a 17:00",
     teacher: "Daiana Cabello",
+    teacherDescription: "Fotógrafa Profesional y Directora de arte en Publicidad. Especializada en fotografía de producto en estudio y en gestión de redes sociales para emprendedores. Formación complementaria en Community Management y producción de contenido digital"
   },
   "gestion-redes-video": {
     name: "Gesti├│n de redes: Video",
@@ -28,6 +31,7 @@
     days: "Lunes y mi├®rcoles",
     hours: "14:00 a 17:00",
     teacher: "Macarena Moyano",
+    teacherDescription: "Diseñadora de Imagen y Sonido (UBA) y docente. Dirijo una productora audiovisual especializada en contenido para redes sociales, enfocada en fotografía y video de producto"
   },
   "diseno-grafico-1": {
     name: "Dise├▒o gr├ífico 1",
@@ -38,6 +42,7 @@
     days: "Lunes y mi├®rcoles",
     hours: "14:00 a 17:00",
     teacher: "Laura Piriz",
+    teacherDescription: "Diseñadora Gráfica y profesora de Artes Visuales con orientación en Pintura. Experiencia en administración digital, maquetación editorial y fotografía. Actualmente cursando segunda orientación en Escultura."
   },
   "diseno-grafico-2": {
     name: "Dise├▒o gr├ífico 2",
@@ -58,6 +63,8 @@
     days: "Martes y jueves",
     hours: "17:00 a 19:00",
     teacher: "Rodrigo Podoba",
+    teacherDescription:
+      "Profesor de matemática e informática con experiencia en diseño web y lenguajes de programación como JavaScript y Python. Estudiante de la tecnicatura en programación en la Universidad Nacional Guillermo Brown.",
   },
   serigrafia: {
     name: "Serigraf├¡a",
@@ -68,6 +75,7 @@
     days: "Lunes y mi├®rcoles",
     hours: "14:00 a 17:00",
     teacher: "Sabrina Lara",
+    teacherDescription:" Profesora de Artes Visuales con orientación en Grabado y Arte Impreso recibida de la Universidad Nacional de Arte (UNA). Me dedico hace más de veinte años a la serigrafía y la educación, especialmente a la enseñanza de artes a niños, adolescentes y adultos en distintos ámbitos"
   },
   "modelado-3d": {
     name: "Modelado en 3D",
@@ -121,6 +129,14 @@ if (course && content && notFound) {
   const teacherPanel = document.querySelector("#course-teacher-panel");
   if (course.teacher) {
     document.querySelector("#course-teacher").textContent = course.teacher;
+    const teacherBio = document.querySelector("#course-teacher-bio");
+    const teacherDescription = document.querySelector(
+      "#course-teacher-description",
+    );
+    if (course.teacherDescription) {
+      teacherDescription.textContent = course.teacherDescription;
+      teacherBio.hidden = false;
+    }
   } else {
     teacherPanel.hidden = true;
   }
