@@ -1,6 +1,6 @@
 /* ==========================================================================
-   CFP N°408 — Secciones: Testimonios e Inscripción
-   Integración del trabajo del equipo de Testimonios/Inscripción
+   CFP N°408 — Secciones: Opiniones, Sede e Inscripción
+   Integración de las secciones de comunidad, ubicación e inscripción
    ========================================================================== */
 
 /* Estilos de sección compartidos para este bloque */
@@ -127,6 +127,64 @@
   margin: 0;
   color: var(--color-text-muted);
   font-size: 0.82rem;
+}
+
+/* ==========================================================================
+   Sección: Sede (#sede)
+   ========================================================================== */
+.location {
+  padding: clamp(3.5rem, 7vw, 6rem) 1.25rem;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg-main);
+}
+
+.location__container {
+  width: min(100%, 72rem);
+  margin-inline: auto;
+}
+
+.location__card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-bg-alt);
+}
+
+.location__icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  padding: 0.65rem;
+  border-radius: 50%;
+  color: var(--color-secondary);
+  background: rgb(0 174 239 / 10%);
+}
+
+.location__card h3 {
+  margin: 0 0 0.4rem;
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.location__card address {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
+.location__card p {
+  margin: 0.4rem 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.location__card a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-underline-offset: 0.15em;
 }
 
 /* ==========================================================================
@@ -260,6 +318,12 @@
   .testimonial-grid,
   .steps-list {
     grid-template-columns: 1fr;
+  }
+
+  .location__card {
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem;
   }
 
   .testimonial-card {

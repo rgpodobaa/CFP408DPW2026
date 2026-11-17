@@ -36,9 +36,10 @@ La página principal se ordenará así:
 2. Hero
 3. Cursos
 4. Institucional
-5. Testimonios de egresados
-6. Proceso de inscripción
-7. Footer
+5. Opiniones
+6. Sede
+7. Proceso de inscripción
+8. Footer
 
 El detalle de curso será una página extra a la que se accede desde una tarjeta. Se recomienda una página reutilizable, por ejemplo `curso.html`, que reciba un identificador de curso mediante la URL o un mecanismo acordado por el equipo. Si el proyecto todavía no tiene esa lógica, se puede comenzar con una página estática de ejemplo y dejar documentada la decisión.
 
@@ -60,13 +61,13 @@ El detalle de curso será una página extra a la que se accede desde una tarjeta
 
 **Contenido:**
 - Identificación del CFP N°408 (nombre y, si está disponible, logotipo).
-- Enlaces a Cursos, Institucional, Testimonios e Inscripción.
+- Enlaces a Cursos, Institucional, Opiniones, Sede e Inscripción.
 - Acción destacada para consultar cursos o iniciar la inscripción.
 
 **Comportamiento y presentación:**
 - En escritorio, presentar marca, navegación y acción en una sola fila.
 - En móvil, usar navegación compacta. Si se implementa un menú desplegable, el botón debe indicar su estado (`aria-expanded`) y poder operarse con teclado.
-- Los enlaces internos deben apuntar a identificadores únicos: `#cursos`, `#institucional`, `#testimonios` y `#inscripcion`.
+- Los enlaces internos deben apuntar a identificadores únicos: `#cursos`, `#institucional`, `#testimonios`, `#sede` y `#inscripcion`.
 - Mantener visible el foco de teclado y diferenciar el enlace activo o el estado hover sin depender únicamente del color.
 
 **Entrega del estudiante:** estructura semántica (`header`/`nav`), estilos responsive y, solo si hace falta, JavaScript del menú móvil.
@@ -141,7 +142,7 @@ El detalle de curso será una página extra a la que se accede desde una tarjeta
 
 **Entrega del estudiante:** sección con `id="institucional"`, estructura semántica y datos revisados por el centro.
 
-### 4.6 Testimonios de egresados
+### 4.6 Opiniones de egresados
 
 **Propósito:** compartir experiencias que ayuden a comprender el impacto de la formación.
 
@@ -157,7 +158,21 @@ El detalle de curso será una página extra a la que se accede desde una tarjeta
 
 **Entrega del estudiante:** sección con `id="testimonios"` y contenido autorizado. No inventar testimonios ni publicar datos personales sin consentimiento.
 
-### 4.7 Proceso de inscripción
+### 4.7 Sede
+
+**Propósito:** ayudar a las personas a ubicar el Centro de Formación Profesional.
+
+**Contenido:**
+- Localidad y dirección confirmadas por el centro.
+- Un canal oficial de consulta, si está disponible.
+
+**Presentación:**
+- Mantener la información de ubicación legible y accesible en pantallas pequeñas.
+- No inferir ni publicar una dirección exacta que no haya sido confirmada.
+
+**Entrega del estudiante:** sección con `id="sede"` y datos de ubicación revisados por el centro.
+
+### 4.8 Proceso de inscripción
 
 **Propósito:** explicar de forma concreta cómo avanzar desde el interés hasta la inscripción.
 
@@ -174,7 +189,7 @@ El detalle de curso será una página extra a la que se accede desde una tarjeta
 
 **Entrega del estudiante:** sección con `id="inscripcion"`, pasos responsive y enlaces probados.
 
-### 4.8 Footer
+### 4.9 Footer
 
 **Propósito:** cerrar la página y facilitar el acceso a información útil.
 
