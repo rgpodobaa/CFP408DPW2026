@@ -55,8 +55,9 @@ body {
 
 .courses__description {
   margin: 1rem 0 0;
-  color: var(--color-text);
+  color: var(--color-secondary);
   font-size: 1.125rem;
+  font-weight: 700;
 }
 
 .courses__note {
@@ -110,7 +111,7 @@ body {
 
 .courses__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: 1fr;
   gap: 1.25rem;
 }
@@ -121,17 +122,12 @@ body {
   grid-template-rows: auto 1fr;
   overflow: hidden;
   border: 1px solid rgb(0 174 239 / 35%);
-  border-top: 0.3rem solid var(--color-secondary);
   border-radius: 0.875rem;
   background: var(--color-bg-main);
   box-shadow: var(--shadow-card);
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
-}
-
-.course-card:nth-child(3n + 2) {
-  border-top-color: var(--color-primary);
 }
 
 .course-card:hover,
@@ -146,6 +142,7 @@ body {
   width: 100%;
   height: auto;
   aspect-ratio: 8 / 5;
+  border-bottom: 2px solid #808080;
   object-fit: cover;
   background: #f0f0f0;
 }
@@ -176,9 +173,9 @@ body {
   justify-content: center;
   margin: auto 0 0;
   padding: 0.65rem 1rem;
-  border: 2px solid var(--color-primary);
+  border: 2px solid #595959;
   border-radius: 0.5rem;
-  background: var(--color-primary);
+  background: #595959;
   color: var(--color-bg-main);
   font: inherit;
   font-weight: 700;
@@ -191,8 +188,8 @@ body {
 }
 
 .course-card__button:hover {
-  border-color: var(--color-text);
-  background: var(--color-text);
+  border-color: var(--color-primary);
+  background: var(--color-primary);
   color: var(--color-bg-main);
 }
 
@@ -256,6 +253,10 @@ body {
 }
 
 @media (max-width: 599px) {
+  .courses__grid {
+    grid-template-columns: 1fr;
+  }
+
   .course-card__button {
     width: 100%;
   }
@@ -295,13 +296,14 @@ body {
 
 .course-card__button--detail {
   background: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #595959;
+  border-color: #595959;
 }
 
 .course-card__button--detail:hover {
-  background: var(--color-primary);
-  color: #FFFFFF;
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 @media (max-width: 480px) {
