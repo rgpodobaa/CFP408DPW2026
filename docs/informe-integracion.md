@@ -25,6 +25,13 @@ Cada sección fue guardada en su propia rama de Git. La tarea docente consistió
 | `origin/institucional` | **Institucional / Equipo** | Tarjetas del equipo directivo y docente con roles, fotos/avatares SVG y bios con estilo accesible. |
 | `origin/Testimonios/Inscripcion` | **Opiniones, Sede e Inscripción** | Experiencias de egresados (`#testimonios`), ubicación del centro (`#sede`) y guía paso a paso (01 al 04) con botón inteligente de preinscripción hacia Gmail (`#inscripcion`). |
 | `origin/Footer` | **Pie de Página** | Footer institucional con ondas SVG dinámicas con los colores del CFP, datos de contacto, enlaces de anclaje y accesos a redes sociales. |
+| `origin/fix-HeroSection` | **Rediseño de portada** | Hero responsive con galería animada, imágenes con créditos y ajustes visuales compartidos. |
+| `origin/fix-tarjetas-cursos` | **Tarjetas de cursos** | Ajustes a la distribución de la grilla para mostrar dos tarjetas por fila. |
+| `origin/fix-institucional` | **Tarjetas institucionales** | Correcciones de tamaño y distribución de las tarjetas docentes. |
+| `origin/Fix-footer-y-textos` | **Footer y docentes** | Mejoras de presentación del footer y biografías docentes en la página de detalle de cursos. |
+| `origin/fix-detalleCurso` | **Detalle de cursos** | Rediseño de la página dinámica, con información general, aprendizajes, herramientas y equipo docente. |
+| `origin/add-Como-llegar` | **Cómo llegar** | Mapa, transporte público y enlaces para consultar indicaciones desde `#como-llegar` (`#sede` como ancla compatible). |
+| `origin/add-form` | **Formulario de consultas** | Formulario accesible que prepara un borrador de consulta en Gmail y ofrece un enlace alternativo si el navegador bloquea la pestaña. |
 
 ---
 
@@ -47,14 +54,17 @@ Al ser un curso inicial con estudiantes en proceso de aprendizaje, surgieron inc
   3. `courses` (Cursos del CFP)
   4. `institutional` (Equipo directivo y docente)
   5. `testimonials` (Voces de la comunidad)
-  6. `enrollment` (Proceso de inscripción)
-  7. `site-footer` (Pie de página)
+  6. `how-to-get` (Mapa, dirección y transporte; anclas `#como-llegar` y `#sede`)
+  7. `enrollment` (Proceso de inscripción)
+  8. `contact` (Formulario de consultas)
+  9. `site-footer` (Pie de página y créditos de imágenes)
 
 ### C. Conexión de funcionalidades desconectadas
 - **Situación:** El equipo de *Cursos* había puesto botones que iban directo a `#inscripcion`, perdiendo el enlace con el trabajo del equipo de *Detalle de Curso* (`curso.html`).
 - **Solución:** Se diseñó una botonera dual en cada tarjeta:
   - **"Ver detalles":** navega a `curso.html?id=nombre-del-curso` para consultar horarios y contenidos.
   - **"Inscribirme":** hace scroll suave hacia `#inscripcion` y preselecciona automáticamente el curso en el mensaje de Gmail.
+  - **Formulario de consultas:** permite seleccionar un curso y redactar una consulta en un borrador de Gmail.
 
 ### D. Colisiones y armonía visual de CSS
 - **Situación:** Cada rama definió su propio `:root` y estilos para `body`.
@@ -76,12 +86,15 @@ CFP408DPW2026/
 │   ├── cursos.css                  # Grilla y tarjetas de oferta educativa
 │   ├── institucional.css           # Directivos, docentes y fichas del equipo
 │   ├── testimonios-inscripcion.css # Citas de egresados y pasos de inscripción
+│   ├── como-llegar.css             # Mapa, transporte y direcciones
+│   ├── contacto.css                # Formulario de consultas
 │   ├── footer.css                  # Pie de página y ondas decorativas SVG
 │   └── curso-detalle.css           # Estilos específicos para curso.html
 ├── js/
 │   ├── hero-navbar.js              # Menú móvil desplegable y accesibilidad (Escape/Aria)
 │   ├── cursos.js                   # Manejo de disponibilidad y preselección de cursos
 │   ├── institucional.js            # Interacciones de las fichas institucionales
+│   ├── contacto.js                 # Preparación del borrador de consulta
 │   └── curso-detalle.js            # Renderizado dinámico del detalle según el parámetro URL
 ├── assets/
 │   └── cursos/                     # Fotografías ilustrativas de los cursos

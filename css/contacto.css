@@ -12,7 +12,10 @@
   column-gap: clamp(1.5rem, 5vw, 4rem);
 }
 
-.contact__heading,
+.contact__heading {
+  grid-column: 1;
+}
+
 .contact-form {
   grid-column: 2;
 }
