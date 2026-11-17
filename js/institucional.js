@@ -5,6 +5,16 @@
     return;
   }
 
+  const cards = section.querySelectorAll(".institutional__card, .institutional__about-card");
+
+  const revealCards = () => {
+    cards.forEach((card, index) => {
+      window.setTimeout(() => {
+        card.classList.add("is-visible");
+      }, index * 120);
+    });
+  };
+
   const roleButtons = section.querySelectorAll(".institutional__role[data-destino]");
 
   roleButtons.forEach((button) => {
@@ -18,7 +28,7 @@
 
     if (!destination) {
       console.error(
-        `[CFP 408] No existe la secci├│n con id="${destinationId}" configurada en un bot├│n de cargo.`
+        `[CFP 408] No existe la sección con id="${destinationId}" configurada en un botón de cargo.`
       );
       return;
     }
@@ -28,4 +38,6 @@
       window.location.hash = destination.id;
     });
   });
+
+  revealCards();
 })();
