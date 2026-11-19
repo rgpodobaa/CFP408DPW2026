@@ -65,6 +65,83 @@
   margin-top: 3.5rem;
 }
 
+/* ==========================================================================
+   CFP N°408 — Sección Sobre Nosotros / Misión y Visión
+   ========================================================================== */
+
+.institutional__about {
+  background: linear-gradient(180deg, rgba(0, 174, 239, 0.05), rgba(230, 0, 126, 0.04));
+  border: 1px solid rgba(26, 26, 26, 0.06);
+  border-radius: 1.5rem;
+  margin-top: 3.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.institutional__about-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.institutional__about-header .institutional__eyebrow {
+  margin-bottom: 0.5rem;
+}
+
+.institutional__about-grid {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: 1.1fr 1.4fr;
+  align-items: stretch;
+}
+
+.institutional__about-copy {
+  align-self: center;
+  color: var(--color-text, #1A1A1A);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.institutional__about-copy p {
+  margin: 0 0 1rem;
+}
+
+.institutional__about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.institutional__about-panels {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.institutional__about-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(26, 26, 26, 0.08);
+  border-left: 0.35rem solid var(--color-primary);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.25rem rgba(26, 26, 26, 0.05);
+  padding: 1.35rem 1.5rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.institutional__about-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.75rem 1.5rem rgba(26, 26, 26, 0.08);
+}
+
+.institutional__about-card h4 {
+  color: var(--color-primary, #E6007E);
+  font-size: 1.2rem;
+  font-weight: 750;
+  margin: 0 0 0.65rem;
+}
+
+.institutional__about-card p {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
 .institutional__team {
   display: grid;
   gap: clamp(1.25rem, 2vw, 2rem);
@@ -237,12 +314,20 @@
   .institutional__faculty {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .institutional__about-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 37.5rem) {
   .institutional {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .institutional__about {
+    padding: 1.25rem 1rem;
   }
 
   .institutional__header {
