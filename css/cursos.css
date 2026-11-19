@@ -146,6 +146,33 @@ body {
   background: #f0f0f0;
 }
 
+.course-card__media {
+  position: relative;
+  margin: 0;
+}
+
+.course-card__image-status {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  padding: 0.75rem 1rem;
+  transform: translate(-50%, -50%);
+  border-radius: 0.4rem;
+  background: rgb(26 26 26 / 88%);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.course-card.is-unavailable .course-card__image-status {
+  display: block;
+}
+
 .course-card__content {
   display: flex;
   flex: 1;
@@ -198,29 +225,16 @@ body {
 }
 
 .course-card__button[aria-disabled="true"] {
+  pointer-events: none;
   cursor: not-allowed;
   border-color: var(--color-text);
   background: var(--color-bg-alt);
   color: var(--color-text);
 }
 
-.course-card__status {
-  display: none;
-  margin: 1rem 0 0;
-  padding: 0.5rem 0.75rem;
-  border-left: 0.25rem solid var(--color-primary);
-  background: var(--color-bg-alt);
-  color: var(--color-text);
-  font-size: 0.9rem;
-  font-weight: 650;
-}
-
-.course-card.is-unavailable .course-card__status {
-  display: block;
-}
-
 .course-card.is-unavailable .course-card__image {
   filter: grayscale(1);
+  opacity: 0.55;
 }
 
 .registration {

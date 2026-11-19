@@ -1,7 +1,7 @@
 ﻿const courses = {
   "diseno-web": {
     name: "Diseño de página web",
-    image: "diseno-web.jpg",
+    image: "assets/Imagenes%20Cursos%20y%20Logo/Pagina-Web.jpg",
     description:
       "Formación para iniciarte en el diseño y desarrollo de páginas web.",
     learning:
@@ -15,7 +15,7 @@
   },
   "gestion-redes-fotoproducto": {
     name: "Gestión de redes: Fotoproducto",
-    image: "redes-fotografia.jpg",
+    image: "assets/Imagenes%20Cursos%20y%20Logo/Fotoproducto.jpg",
     description:
       "Curso orientado a incorporar la fotografía de productos como recurso para comunicar en redes sociales.",
     learning:
@@ -29,7 +29,7 @@
   },
   "gestion-redes-video": {
     name: "Gestión de redes: Video",
-    image: "redes-video.jpg",
+    image: "assets/Imagenes%20Cursos%20y%20Logo/Video-Redes.jpg",
     description:
       "Curso orientado a la producción de contenidos en video para comunicar en redes sociales.",
     learning:
@@ -43,7 +43,7 @@
   },
   "diseno-grafico-1": {
     name: "Diseño gráfico",
-    image: "diseno-grafico-1.jpg",
+    image: "assets/Imagenes%20Cursos%20y%20Logo/Dise%C3%B1o-G1.jpg",
     description:
       "Una introducción al diseño gráfico y a la creación de piezas visuales.",
     learning:
@@ -57,7 +57,7 @@
   },
   "diseno-grafico": {
     name: "Diseño gráfico",
-    image: "diseno-grafico-1.jpg",
+    image: "assets/Imagenes%20Cursos%20y%20Logo/Dise%C3%B1o-G2.jpg",
     description:
       "Una introducción al diseño gráfico y a la creación de piezas visuales.",
     learning:
@@ -71,7 +71,7 @@
   },
   "habilidades-digitales": {
     name: "Habilidades digitales",
-    image: "habilidades-digitales.jpg",
+    image: "assets/cursos/habilidades-digitales.jpg",
     description:
       "Formación para desarrollar habilidades de uso de herramientas y recursos digitales.",
     learning:
@@ -85,7 +85,7 @@
   },
   serigrafia: {
     name: "Serigrafía",
-    image: "serigrafia.jpg",
+    image: "assets/Imagenes%20Cursos%20y%20Logo/Serigrafia.jpg",
     description:
       "Formación introductoria en serigrafía como técnica de impresión y reproducción gráfica.",
     learning:
@@ -99,7 +99,7 @@
   },
   "modelado-3d": {
     name: "Diseño y modelado 3D",
-    image: "modelado-3d.jpg",
+    image: "assets/cursos/modelado-3d.jpg",
     description:
       "Una introducción al modelado tridimensional y a la creación de objetos digitales en 3D.",
     learning:
@@ -236,7 +236,7 @@ if (course && content && notFound) {
   document.querySelector("#course-description").textContent =
     course.description;
   const courseImage = document.querySelector("#course-image");
-  courseImage.src = `assets/cursos/${course.image}`;
+  courseImage.src = course.image;
   courseImage.alt = `Imagen del curso ${course.name}`;
   document.querySelector("#course-learning").textContent = course.learning;
   const toolsList = document.querySelector("#course-tools");
