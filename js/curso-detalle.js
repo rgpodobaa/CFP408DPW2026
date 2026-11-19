@@ -10,7 +10,8 @@
     hours: "14:00 a 17:00",
     tools: ["VS Code", "HTML5", "CSS3", "GitHub"],
     teacher: "Rodrigo Podoba",
-    teacherDescription: "Docente de Diseño de página web y habilidades digitales.",
+    teacherDescription:
+      "Profesor de matemática e informática con experiencia en diseño web y lenguajes de programación como JavaScript y Python. Estudiante de la tecnicatura en programación en la Universidad Nacional Guillermo Brown.",
   },
   "gestion-redes-fotoproducto": {
     name: "Gestión de redes: Fotoproducto",
@@ -23,7 +24,8 @@
     hours: "14:00 a 17:00",
     tools: ["Instagram", "Photoshop", "Canva", "Google Fotos"],
     teacher: "Daiana Cabello",
-    teacherDescription: "Docente de Gestión de redes: Fotoproducto.",
+    teacherDescription:
+      "Fotógrafa Profesional y Directora de arte en Publicidad. Especializada en fotografía de producto en estudio y en gestión de redes sociales para emprendedores. Formación complementaria en Community Management y producción de contenido digital.",
   },
   "gestion-redes-video": {
     name: "Gestión de redes: Video",
@@ -36,7 +38,8 @@
     hours: "14:00 a 17:00",
     tools: ["Instagram", "Premiere"],
     teacher: "Macarena Moyano",
-    teacherDescription: "Docente de Gestión de redes: Video.",
+    teacherDescription:
+      "Diseñadora de Imagen y Sonido (UBA) y docente. Dirijo una productora audiovisual especializada en contenido para redes sociales, enfocada en fotografía y video de producto.",
   },
   "diseno-grafico-1": {
     name: "Diseño gráfico",
@@ -49,7 +52,8 @@
     hours: "14:00 a 17:00",
     tools: ["Photoshop", "Illustrator", "InDesign"],
     teacher: "Laura Piriz",
-    teacherDescription: "Docente de Diseño gráfico.",
+    teacherDescription:
+      "Diseñadora Gráfica y profesora de Artes Visuales con orientación en Pintura. Experiencia en administración digital, maquetación editorial y fotografía. Actualmente cursando segunda orientación en Escultura.",
   },
   "diseno-grafico": {
     name: "Diseño gráfico",
@@ -62,7 +66,8 @@
     hours: "14:00 a 17:00",
     tools: ["Photoshop", "Illustrator", "InDesign"],
     teacher: "Laura Piriz",
-    teacherDescription: "Docente de Diseño gráfico.",
+    teacherDescription:
+      "Diseñadora Gráfica y profesora de Artes Visuales con orientación en Pintura. Experiencia en administración digital, maquetación editorial y fotografía. Actualmente cursando segunda orientación en Escultura.",
   },
   "habilidades-digitales": {
     name: "Habilidades digitales",
@@ -75,7 +80,8 @@
     hours: "17:00 a 19:00",
     tools: ["Windows", "Word", "Excel", "PowerPoint", "Google"],
     teacher: "Rodrigo Podoba",
-    teacherDescription: "Docente de Diseño de página web y habilidades digitales.",
+    teacherDescription:
+      "Profesor de matemática e informática con experiencia en diseño web y lenguajes de programación como JavaScript y Python. Estudiante de la tecnicatura en programación en la Universidad Nacional Guillermo Brown.",
   },
   serigrafia: {
     name: "Serigrafía",
@@ -88,7 +94,8 @@
     hours: "14:00 a 17:00",
     tools: ["Photoshop"],
     teacher: "Sabrina Lara",
-    teacherDescription: "Docente de Serigrafía.",
+    teacherDescription:
+      "Profesora de Artes Visuales con orientación en Grabado y Arte Impreso recibida de la Universidad Nacional de Arte (UNA). Me dedico hace más de veinte años a la serigrafía y la educación, especialmente a la enseñanza de artes a niños, adolescentes y adultos en distintos ámbitos.",
   },
   "modelado-3d": {
     name: "Diseño y modelado 3D",
