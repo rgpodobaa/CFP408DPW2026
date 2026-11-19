@@ -199,6 +199,7 @@
 }
 
 .institutional__photo-placeholder {
+  position: relative;
   align-items: center;
   aspect-ratio: 5 / 3.5;
   background: var(--color-bg-alt, #F8F9FA);
@@ -208,6 +209,26 @@
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
+}
+
+.institutional__leadership-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.institutional__faculty-photo {
+  aspect-ratio: auto;
+  background: var(--color-bg-alt, #F8F9FA);
+  border-bottom: 0.25rem solid var(--color-accent, #FFED00);
+  display: block;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+  width: 80%;
 }
 
 .institutional__avatar {
@@ -374,10 +395,6 @@
 
   .institutional__faculty .institutional__card-content {
     padding: 0.7rem;
-  }
-
-  .institutional__faculty .institutional__photo-placeholder {
-    aspect-ratio: 1 / 0.8;
   }
 
   .institutional__faculty .institutional__avatar {
