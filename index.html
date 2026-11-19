@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf7e9" />
     <meta
       name="description"
       content="Cursos gratuitos de formación profesional con certificación oficial en el CFP N°408."
@@ -26,7 +27,7 @@
     <a class="skip-link" href="#inicio">Saltar al contenido</a>
 
     <!-- =======================================================================
-         1. NAVBAR / NAVEGACIÓN PRINCIPAL
+         1. NAVBAR / NAVEGACIÓN PRINCIPAL (Conservada según lo solicitado)
          ======================================================================= -->
     <header class="site-nav">
       <a class="site-nav__brand" href="#inicio" aria-label="CFP 408, inicio">
@@ -63,23 +64,35 @@
     </header>
 
     <!-- =======================================================================
-         2. HERO SECTION
+         2. HERO SECTION (Rediseño completo de fix-HeroSection)
          ======================================================================= -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero__copy">
-        <p class="hero__eyebrow">Formación profesional · CFP N°408</p>
-        <h1 class="hero__title" id="hero-title">
-          <span class="hero__title-main">CFP</span>
-          <span class="hero__title-number">408</span>
-        </h1>
-        <p class="hero__description">
-          Cursos gratuitos de formación profesional con certificación oficial.
+        <p class="hero__eyebrow">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <path d="M19 10.1c0 5-7 11-7 11s-7-6-7-11a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.7"/>
+            <circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/>
+          </svg>
+          sede en lomas de zamora
         </p>
-        <a class="hero__cta" href="#cursos">
-          Ver cursos
-          <span class="hero__cta-arrow" aria-hidden="true">↗</span>
-        </a>
-        <p class="hero__note">Aprendé algo nuevo. Abrí tu próximo camino.</p>
+        <h1 class="hero__title" id="hero-title">CFP408</h1>
+        <p class="hero__subtitle">Formación profesional</p>
+        <p class="hero__description">
+          Centro de formación laboral con cursos gratuitos, presenciales y con certificación oficial.
+          Aprendé herramientas prácticas para aplicar en proyectos reales y abrí tus oportunidades.
+        </p>
+        <div class="hero__actions">
+          <a class="hero__cta" href="#cursos">
+            Oferta Académica
+            <svg class="hero__cta-arrow" aria-hidden="true" viewBox="0 0 20 20" fill="none">
+              <path d="M10 4v11m-4-4 4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="hero__duration" aria-label="16 semanas de formación">
+            <span class="hero__duration-number">16</span>
+            <span class="hero__duration-copy"><strong>semanas</strong><small>de formación</small></span>
+          </div>
+        </div>
       </div>
 
       <div class="hero__gallery" role="region" aria-label="Cursos de formación destacados">
@@ -88,52 +101,52 @@
             <div class="hero__track-group">
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/diseno-grafico-1.jpg" alt="" />
-                  <figcaption>Diseño Gráfico 1</figcaption>
+                  <img src="assets/cursos/galeria-diseno-grafico.jpg" alt="Frente de un estudio de diseño gráfico" width="1024" height="768" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">01</span><span class="hero__course-title">Diseño Gráfico</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/diseno-grafico-2.jpg" alt="" />
-                  <figcaption>Diseño Gráfico 2</figcaption>
+                  <img src="assets/cursos/galeria-fotoproducto.jpg" alt="Hamburguesas fotografiadas para una producción de producto" width="640" height="960" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">02</span><span class="hero__course-title">Gestión de Redes: Fotografía</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/diseno-web.jpg" alt="" />
-                  <figcaption>Diseño de Página Web</figcaption>
+                  <img src="assets/cursos/galeria-gestion-video.jpg" alt="Actores en una escena de producción audiovisual con vestuario de época" width="1024" height="768" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">03</span><span class="hero__course-title">Gestión de Redes: Video</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/redes-fotografia.jpg" alt="" />
-                  <figcaption>Gestión de Redes: Fotoproducto</figcaption>
+                  <img src="assets/cursos/galeria-serigrafia.jpg" alt="Mesa de trabajo y materiales para serigrafía" width="1024" height="768" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">04</span><span class="hero__course-title">Serigrafía</span></figcaption>
                 </figure>
               </article>
             </div>
             <div class="hero__track-group" aria-hidden="true">
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/diseno-grafico-1.jpg" alt="" />
-                  <figcaption>Diseño Gráfico 1</figcaption>
+                  <img src="assets/cursos/galeria-diseno-grafico.jpg" alt="Frente de un estudio de diseño gráfico" width="1024" height="768" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">01</span><span class="hero__course-title">Diseño Gráfico</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/diseno-grafico-2.jpg" alt="" />
-                  <figcaption>Diseño Gráfico 2</figcaption>
+                  <img src="assets/cursos/galeria-fotoproducto.jpg" alt="Hamburguesas fotografiadas para una producción de producto" width="640" height="960" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">02</span><span class="hero__course-title">Gestión de Redes: Fotografía</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/diseno-web.jpg" alt="" />
-                  <figcaption>Diseño de Página Web</figcaption>
+                  <img src="assets/cursos/galeria-gestion-video.jpg" alt="Actores en una escena de producción audiovisual con vestuario de época" width="1024" height="768" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">03</span><span class="hero__course-title">Gestión de Redes: Video</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/redes-fotografia.jpg" alt="" />
-                  <figcaption>Gestión de Redes: Fotoproducto</figcaption>
+                  <img src="assets/cursos/galeria-serigrafia.jpg" alt="Mesa de trabajo y materiales para serigrafía" width="1024" height="768" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">04</span><span class="hero__course-title">Serigrafía</span></figcaption>
                 </figure>
               </article>
             </div>
@@ -145,52 +158,51 @@
             <div class="hero__track-group">
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/redes-video.jpg" alt="" />
-                  <figcaption>Gestión de Redes: Video</figcaption>
+                  <img src="assets/cursos/galeria-habilidades-profesionales.jpg" alt="Personas trabajando juntas en una reunión de equipo" width="1024" height="683" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">05</span><span class="hero__course-title">Habilidades Digitales</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/habilidades-digitales.jpg" alt="" />
-                  <figcaption>Habilidades Digitales</figcaption>
+                  <img src="assets/cursos/galeria-diseno-web.jpg" alt="Computadora portátil y boceto sobre un escritorio de madera" width="1024" height="663" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">06</span><span class="hero__course-title">Diseño de Página Web</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/serigrafia.jpg" alt="" />
-                  <figcaption>Serigrafía</figcaption>
+                  <img src="assets/cursos/modelado-3d.jpg" alt="Impresoras 3D trabajando en un taller de fabricación digital" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">07</span><span class="hero__course-title">Diseño y Modelado 3D</span></figcaption>
                 </figure>
               </article>
             </div>
             <div class="hero__track-group" aria-hidden="true">
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/redes-video.jpg" alt="" />
-                  <figcaption>Gestión de Redes: Video</figcaption>
+                  <img src="assets/cursos/galeria-habilidades-profesionales.jpg" alt="Personas trabajando juntas en una reunión de equipo" width="1024" height="683" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">05</span><span class="hero__course-title">Habilidades Digitales</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/habilidades-digitales.jpg" alt="" />
-                  <figcaption>Habilidades Digitales</figcaption>
+                  <img src="assets/cursos/galeria-diseno-web.jpg" alt="Computadora portátil y boceto sobre un escritorio de madera" width="1024" height="663" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">06</span><span class="hero__course-title">Diseño de Página Web</span></figcaption>
                 </figure>
               </article>
               <article class="hero__course-card">
                 <figure class="hero__course-figure">
-                  <img src="assets/cursos/serigrafia.jpg" alt="" />
-                  <figcaption>Serigrafía</figcaption>
+                  <img src="assets/cursos/modelado-3d.jpg" alt="Impresoras 3D trabajando en un taller de fabricación digital" />
+                  <figcaption><span class="hero__course-number" aria-hidden="true">07</span><span class="hero__course-title">Diseño y Modelado 3D</span></figcaption>
                 </figure>
               </article>
             </div>
           </div>
         </div>
-        <span class="hero__gallery-stamp" aria-hidden="true">Aprender<br />transforma</span>
       </div>
     </section>
 
     <main id="contenido">
       <!-- =======================================================================
-           3. SECCIÓN: CURSOS (OFERTA FORMATIVA)
+           3. SECCIÓN: CURSOS (Rediseño a 2 tarjetas de fix-tarjetas-cursos)
            ======================================================================= -->
       <section class="courses" id="cursos" aria-labelledby="courses-title">
         <div class="courses__container">
@@ -216,7 +228,7 @@
                 height="400"
               />
               <div class="course-card__content">
-                <h3 class="course-card__title">Diseño gráfico I</h3>
+                <h3 class="course-card__title">Diseño gráfico</h3>
                 <p class="course-card__description">
                   Introducción a la comunicación visual, el color, la composición y las herramientas básicas de diseño.
                 </p>
@@ -228,7 +240,7 @@
                     class="course-card__button"
                     href="#inscripcion"
                     data-course-registration
-                    aria-label="Inscribirme en Diseño gráfico I"
+                    aria-label="Inscribirme en Diseño gráfico"
                   >
                     Inscribirme
                   </a>
@@ -236,37 +248,7 @@
               </div>
             </article>
 
-            <!-- Curso 2 -->
-            <article class="course-card" data-course-id="diseno-grafico-2">
-              <img
-                class="course-card__image"
-                src="assets/cursos/diseno-grafico-2.jpg"
-                alt="Computadora portátil con un proyecto de diseño visual abierto"
-                width="640"
-                height="400"
-              />
-              <div class="course-card__content">
-                <h3 class="course-card__title">Diseño gráfico II</h3>
-                <p class="course-card__description">
-                  Profundización en recursos gráficos y desarrollo de piezas visuales para distintos formatos.
-                </p>
-                <div class="course-card__actions">
-                  <a class="course-card__button course-card__button--detail" href="curso.html?id=diseno-grafico-2">
-                    Ver detalles
-                  </a>
-                  <a
-                    class="course-card__button"
-                    href="#inscripcion"
-                    data-course-registration
-                    aria-label="Inscribirme en Diseño gráfico II"
-                  >
-                    Inscribirme
-                  </a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Curso 3 -->
+            <!-- Curso 2 (antes 3) -->
             <article class="course-card" data-course-id="gestion-redes-fotoproducto">
               <img
                 class="course-card__image"
@@ -296,7 +278,7 @@
               </div>
             </article>
 
-            <!-- Curso 4 -->
+            <!-- Curso 3 (antes 4) -->
             <article class="course-card" data-course-id="serigrafia">
               <img
                 class="course-card__image"
@@ -326,7 +308,7 @@
               </div>
             </article>
 
-            <!-- Curso 5 -->
+            <!-- Curso 4 (antes 5) -->
             <article class="course-card" data-course-id="habilidades-digitales">
               <img
                 class="course-card__image"
@@ -356,7 +338,7 @@
               </div>
             </article>
 
-            <!-- Curso 6 -->
+            <!-- Curso 5 (antes 6) -->
             <article class="course-card" data-course-id="modelado-3d" data-available="false">
               <img
                 class="course-card__image"
@@ -389,7 +371,7 @@
               </div>
             </article>
 
-            <!-- Curso 7 -->
+            <!-- Curso 6 (antes 7) -->
             <article class="course-card" data-course-id="gestion-redes-video">
               <img
                 class="course-card__image"
@@ -419,7 +401,7 @@
               </div>
             </article>
 
-            <!-- Curso 8 -->
+            <!-- Curso 7 (antes 8) -->
             <article class="course-card" data-course-id="diseno-web">
               <img
                 class="course-card__image"
@@ -453,19 +435,11 @@
       </section>
 
       <!-- =======================================================================
-           4. SECCIÓN: INSTITUCIONAL
+           4. SECCIÓN: INSTITUCIONAL (Actualización de fix-institucional)
            ======================================================================= -->
       <section class="institutional" id="institucional" aria-labelledby="institutional-title">
         <div class="institutional__container">
           <header class="institutional__header">
-            <div class="institutional__brand">
-              <span class="institutional__brand-mark" aria-hidden="true">408</span>
-              <span class="institutional__brand-copy">
-                <strong>CFP 408</strong>
-                <span>Centro de Formación Profesional</span>
-              </span>
-            </div>
-
             <p class="institutional__eyebrow">Sección institucional</p>
             <h2 class="institutional__title" id="institutional-title">Conocé al equipo del CFP 408</h2>
             <p class="institutional__intro">
