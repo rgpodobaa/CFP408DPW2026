@@ -16,12 +16,14 @@
     <link rel="stylesheet" href="css/cursos.css" />
     <link rel="stylesheet" href="css/institucional.css" />
     <link rel="stylesheet" href="css/testimonios-inscripcion.css" />
+    <link rel="stylesheet" href="css/como-llegar.css" />
     <link rel="stylesheet" href="css/footer.css" />
 
     <!-- Scripts funcionales -->
     <script src="js/hero-navbar.js" defer></script>
     <script src="js/cursos.js" defer></script>
     <script src="js/institucional.js" defer></script>
+    <script src="js/contacto.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#inicio">Saltar al contenido</a>
@@ -699,6 +701,181 @@
           </aside>
         </div>
       </section>
+
+      <!-- =======================================================================
+           6. SECCIÓN: CÓMO LLEGAR Y CONTACTO
+           ======================================================================= -->
+      <section class="contact-location" id="como-llegar" aria-labelledby="contact-location-title">
+        <div class="contact-location__container">
+          <div class="contact-location__heading">
+            <p class="contact-location__eyebrow">Estamos cerca · Contacto</p>
+            <h2 id="contact-location-title">¿Cómo llegar y contactarnos?</h2>
+            <p class="contact-location__lead">
+              Encontranos en Julio Fonrouge 326, Lomas de Zamora, o envianos tu consulta directa desde el formulario.
+            </p>
+          </div>
+
+          <!-- Fila superior: Mapa de un lado y Formulario al costado -->
+          <div class="contact-location__main-grid">
+            <div class="contact-location__map">
+              <iframe
+                title="Mapa de Julio Fonrouge 326, Lomas de Zamora"
+                src="https://www.google.com/maps?q=Julio+Fonrouge+326%2C+Lomas+de+Zamora%2C+Buenos+Aires&amp;output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="contact-location__form-wrapper" id="contacto">
+              <form id="contact-form" class="contact-form" action="mailto:cfp408@abc.gob.ar" method="post" enctype="text/plain">
+                <div class="contact-form__heading">
+                  <h3 class="contact-form__title">Envianos tu consulta</h3>
+                  <p class="contact-form__subtitle">Completá tus datos y te responderemos a la brevedad.</p>
+                </div>
+
+                <div class="contact-form__field">
+                  <label for="contact-email">Tu correo electrónico</label>
+                  <input
+                    id="contact-email"
+                    name="correo"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="nombre@ejemplo.com"
+                    required
+                  />
+                </div>
+
+                <div class="contact-form__field">
+                  <label for="contact-course">Curso de tu interés</label>
+                  <select id="contact-course" name="curso" required>
+                    <option value="" selected disabled>Seleccioná un curso</option>
+                    <option>Diseño Gráfico</option>
+                    <option>Gestión de redes: Fotografía</option>
+                    <option>Serigrafía</option>
+                    <option>Habilidades digitales</option>
+                    <option>Diseño y modelado 3D</option>
+                    <option>Gestión de redes: Video</option>
+                    <option>Diseño de páginas web</option>
+                  </select>
+                </div>
+
+                <div class="contact-form__field">
+                  <label for="contact-message">Tu consulta</label>
+                  <textarea
+                    id="contact-message"
+                    name="consulta"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Escribí tu consulta aquí (hasta 500 caracteres)"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="contact-form__submit">
+                  <button class="contact-form__button" type="submit">Enviar consulta</button>
+                  <p class="contact-form__note">
+                    Se abrirá un borrador en Gmail con los datos listos para enviar.
+                  </p>
+                </div>
+
+                <p id="contact-status" class="contact-form__status" role="status" aria-live="polite"></p>
+                <a
+                  id="contact-fallback"
+                  class="contact-form__fallback"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  hidden
+                >
+                  Abrir el borrador de consulta
+                </a>
+              </form>
+            </div>
+          </div>
+
+          <!-- Fila inferior: Información de colectivos, trenes y viaje -->
+          <div class="contact-location__transport-grid">
+            <article class="transport-card">
+              <span class="transport-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 6v6"/>
+                  <path d="M15 6v6"/>
+                  <path d="M2 12h19.6"/>
+                  <path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4C2.9 6 1.9 6.8 1.6 7.8L.2 12.8c-.1.4-.2.8-.2 1.2 0 .4.1.8.2 1.2.3 1.1.8 2.8.8 2.8h3"/>
+                  <circle cx="7" cy="18" r="2"/>
+                  <path d="M9 18h5"/>
+                  <circle cx="16" cy="18" r="2"/>
+                </svg>
+              </span>
+              <div class="transport-card__content">
+                <h3>Colectivos cercanos</h3>
+                <p>Parada en Fonrouge y Pueyrredón (a unos 30 metros de la sede):</p>
+                <ul class="transport-card__list" aria-label="Líneas de colectivo y ramales">
+                  <li><strong>Línea 266:</strong> ramales 1, 2, 4 y 5</li>
+                  <li><strong>Línea 278:</strong> ramal A</li>
+                  <li><strong>Línea 564:</strong> ramal 3</li>
+                </ul>
+                <a
+                  class="transport-card__link"
+                  href="https://www.google.com/maps/dir/?api=1&amp;destination=Julio+Fonrouge+326%2C+Lomas+de+Zamora%2C+Buenos+Aires&amp;travelmode=transit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver recorridos en Google Maps <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <article class="transport-card">
+              <span class="transport-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="16" height="16" x="4" y="3" rx="2"/>
+                  <path d="M4 11h16"/>
+                  <path d="M12 3v8"/>
+                  <path d="m8 19-2 3"/>
+                  <path d="m18 22-2-3"/>
+                  <path d="M8 15h0"/>
+                  <path d="M16 15h0"/>
+                </svg>
+              </span>
+              <div class="transport-card__content">
+                <h3>En tren</h3>
+                <p>
+                  Estamos a solo <strong>2 cuadras de la estación Lomas de Zamora</strong> (Línea General Roca).
+                </p>
+                <p class="transport-card__note">
+                  Conexión directa y rápida con Constitución, Lanús, Banfield, Temperley, Glew y Alejandro Korn.
+                </p>
+              </div>
+            </article>
+
+            <article class="transport-card transport-card--directions">
+              <span class="transport-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                </svg>
+              </span>
+              <div class="transport-card__content">
+                <h3>Trazar viaje</h3>
+                <p>Nuestra dirección oficial:</p>
+                <address class="transport-card__address">
+                  <strong>Julio Fonrouge 326</strong><br />
+                  Lomas de Zamora, Buenos Aires
+                </address>
+                <a
+                  class="transport-card__button"
+                  href="https://www.google.com/maps/dir/?api=1&amp;destination=Julio+Fonrouge+326%2C+Lomas+de+Zamora%2C+Buenos+Aires"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Cómo llegar en Google Maps <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- =======================================================================
@@ -743,6 +920,7 @@
               <li><a href="#institucional">Equipo institucional</a></li>
               <li><a href="#testimonios">Testimonios de egresados</a></li>
               <li><a href="#inscripcion">Proceso de inscripción</a></li>
+              <li><a href="#como-llegar">Cómo llegar y contacto</a></li>
             </ul>
           </nav>
 
