@@ -132,7 +132,6 @@ body {
 
 .course-card:hover,
 .course-card:focus-within {
-  border-color: var(--color-primary);
   transform: translateY(-0.2rem);
   box-shadow: 0 0.75rem 2rem rgb(26 26 26 / 12%);
 }

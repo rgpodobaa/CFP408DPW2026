@@ -4,7 +4,7 @@ const mobileMenu = document.querySelector("#site-nav-mobile-links");
 if (menuButton && mobileMenu) {
   const closeMenu = () => {
     menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Abrir men├║ de navegaci├│n");
+    menuButton.setAttribute("aria-label", "Abrir menú de navegación");
     mobileMenu.hidden = true;
   };
 
@@ -13,7 +13,7 @@ if (menuButton && mobileMenu) {
     menuButton.setAttribute("aria-expanded", String(!isExpanded));
     menuButton.setAttribute(
       "aria-label",
-      isExpanded ? "Abrir men├║ de navegaci├│n" : "Cerrar men├║ de navegaci├│n",
+      isExpanded ? "Abrir menú de navegación" : "Cerrar menú de navegación",
     );
     mobileMenu.hidden = isExpanded;
   });

@@ -38,23 +38,25 @@ document.querySelectorAll("[data-course-id]").forEach((card) => {
   }
 });
 
-// Al hacer clic en inscribirme en una tarjeta, actualiza el borrador de inscripción
+// Al hacer clic en inscribirme en una tarjeta, sincroniza el formulario de contacto si existe
 document.querySelectorAll("[data-course-registration][href]").forEach((link) => {
   link.addEventListener("click", () => {
     const card = link.closest(".course-card");
     const titleEl = card ? card.querySelector(".course-card__title") : null;
     const courseName = titleEl ? titleEl.textContent.trim() : "";
 
-    const selection = document.querySelector("[data-registration-selection]");
-    if (selection && courseName) {
-      selection.textContent = `Curso seleccionado: ${courseName}. Seguí los pasos abajo para enviar tu solicitud.`;
-    }
-
-    const emailButton = document.querySelector("#enrollment-email-link");
-    if (emailButton && courseName) {
-      const subject = encodeURIComponent(`Inscripción - ${courseName}`);
-      const body = encodeURIComponent(`Hola,\n\nQuiero solicitar la inscripción al curso: ${courseName}.\n\nNombre completo: \nDNI: \nTeléfono: `);
-      emailButton.href = `https://mail.google.com/mail/?view=cm&fs=1&su=${subject}&body=${body}`;
+    const courseSelect = document.querySelector("#contact-course");
+    if (courseSelect && courseName) {
+      const normalizedName = courseName.toLowerCase();
+      for (const option of courseSelect.options) {
+        if (
+          option.textContent.trim().toLowerCase().includes(normalizedName)
+          || normalizedName.includes(option.textContent.trim().toLowerCase())
+        ) {
+          courseSelect.value = option.value;
+          break;
+        }
+      }
     }
   });
 });
