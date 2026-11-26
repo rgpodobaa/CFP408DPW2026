@@ -16,13 +16,12 @@ document.querySelectorAll("[data-course-id]").forEach((card) => {
   card.dataset.available = String(isAvailable);
   card.classList.toggle("is-unavailable", !isAvailable);
 
-  const status = card.querySelector("[data-course-status]");
+  const detailLink = card.querySelector(".course-card__button--detail");
   const registrationLink = card.querySelector("[data-course-registration]");
 
-  if (status) {
-    status.textContent = isAvailable
-      ? "Curso vigente."
-      : "Curso no vigente actualmente. Consultá en el centro para conocer futuras aperturas.";
+  if (detailLink && !isAvailable) {
+    detailLink.removeAttribute("href");
+    detailLink.setAttribute("aria-disabled", "true");
   }
 
   if (registrationLink) {
@@ -33,6 +32,7 @@ document.querySelectorAll("[data-course-id]").forEach((card) => {
     } else {
       registrationLink.removeAttribute("href");
       registrationLink.setAttribute("aria-disabled", "true");
+      registrationLink.removeAttribute("aria-label");
       registrationLink.textContent = "No disponible";
     }
   }

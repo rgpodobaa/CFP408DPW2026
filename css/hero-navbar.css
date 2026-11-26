@@ -368,12 +368,7 @@
   display: grid;
   width: 2.8rem;
   height: 2.8rem;
-  place-items: center;
-  color: var(--color-bg-main);
-  background: var(--color-primary);
-  font-size: 0.85rem;
-  font-weight: 900;
-  letter-spacing: 0.03em;
+  object-fit: contain;
 }
 
 .site-nav__brand-name {
@@ -390,7 +385,7 @@
 }
 
 .site-nav__desktop a,
-.site-nav__mobile-nav a:not(.site-nav__mobile-cta) {
+.site-nav__mobile-nav a {
   color: inherit;
   font-size: 0.82rem;
   font-weight: 700;
@@ -399,48 +394,9 @@
 }
 
 .site-nav__desktop a:hover,
-.site-nav__mobile-nav a:not(.site-nav__mobile-cta):hover {
+.site-nav__mobile-nav a:hover {
   color: var(--color-primary);
   text-decoration: underline;
-}
-
-.site-nav__cta {
-  flex: 0 0 auto;
-  min-height: 2.75rem;
-  padding: 0.65rem 0.9rem;
-  font-size: 0.78rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border: 2px solid var(--color-primary);
-  border-radius: 0.15rem;
-  color: var(--color-text);
-  background: var(--color-primary);
-  font-weight: 700;
-  text-decoration: none;
-  transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
-}
-
-.site-nav__cta:hover {
-  color: var(--color-text);
-  background: var(--color-bg-main);
-  transform: translateY(-2px);
-}
-
-.site-nav__mobile-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.5rem;
-  padding: 0.7rem 0.75rem;
-  border: 2px solid var(--color-primary);
-  border-radius: 0.15rem;
-  color: var(--color-text);
-  background: var(--color-primary);
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-decoration: none;
 }
 
 .site-nav__toggle,
@@ -580,8 +536,7 @@
     height: 2.5rem;
   }
 
-  .site-nav__desktop,
-  .site-nav > .site-nav__cta {
+  .site-nav__desktop {
     display: none;
   }
 
@@ -626,15 +581,9 @@
     box-shadow: 0 1rem 2.5rem rgb(26 26 26 / 12%);
   }
 
-  .site-nav__mobile-nav a:not(.site-nav__mobile-cta) {
+  .site-nav__mobile-nav a {
     padding: 0.85rem 0;
     border-bottom: 1px solid rgb(26 26 26 / 8%);
-  }
-
-  .site-nav__mobile-cta {
-    margin: 0.75rem 0 0.3rem;
-    padding: 0.7rem 0.75rem;
-    font-size: 0.8rem;
   }
 }
 
@@ -643,8 +592,6 @@
   .hero__course-figure img,
   .hero__course-figure figcaption,
   .hero__cta,
-  .site-nav__cta,
-  .site-nav__mobile-cta,
   .site-nav__toggle span {
     animation: none;
     transition: none;

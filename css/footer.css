@@ -98,17 +98,10 @@
 }
 
 .site-footer__brand-mark {
-  display: inline-flex;
+  display: block;
   flex: 0 0 2.5rem;
   height: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-  background: var(--color-primary, #E6007E);
-  color: #FFFFFF;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.03em;
+  object-fit: contain;
 }
 
 .site-footer__eyebrow {
