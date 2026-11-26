@@ -25,6 +25,8 @@ Cada sección fue guardada en su propia rama de Git. La tarea docente consistió
 | `origin/institucional` | **Institucional / Equipo** | Tarjetas del equipo directivo y docente con roles, fotos/avatares SVG y bios con estilo accesible. |
 | `origin/Testimonios/Inscripcion` | **Testimonios e Inscripción** | Tarjetas de experiencias de egresados (`#testimonios`) y guía paso a paso (01 al 04) con botón inteligente de preinscripción hacia Gmail (`#inscripcion`). |
 | `origin/Footer` | **Pie de Página** | Footer institucional con ondas SVG dinámicas con los colores del CFP, datos de contacto, enlaces de anclaje y accesos a redes sociales. |
+| `origin/Imagenesdocentes` | **Fotografías del Equipo Docente** | Incorporación de fotografías reales del equipo docente y directivo en `assets/imagenes profe/`, integración en fichas institucionales y visualización dinámica en `curso.html`. |
+| `origin/fix-imagenes-navbar-y-tarjeta-deshabilitada` | **Logo, Imágenes de Cursos y Estado 3D** | Incorporación del logo oficial del CFP en barra de navegación y pie de página, fotografías reales de cursos (`assets/Imagenes Cursos y Logo/`), optimización del navbar a la derecha y estado visual de curso deshabilitado para Modelado 3D. |
 
 ---
 
@@ -84,7 +86,9 @@ CFP408DPW2026/
 │   ├── institucional.js            # Interacciones de las fichas institucionales
 │   └── curso-detalle.js            # Renderizado dinámico del detalle según el parámetro URL
 ├── assets/
-│   └── cursos/                     # Fotografías ilustrativas de los cursos
+│   ├── cursos/                     # Fotografías ilustrativas y de muestra iniciales
+│   ├── Imagenes Cursos y Logo/     # Logo oficial del CFP 408 y fotos de cursos en taller
+│   └── imagenes profe/             # Fotografías reales del equipo directivo y docente
 └── docs/
     ├── guia-diseno-y-desarrollo.md # Especificación y contratos iniciales
     └── informe-integracion.md      # Este documento
