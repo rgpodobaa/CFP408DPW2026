@@ -112,6 +112,14 @@
   },
 };
 
+const teacherPhotos = {
+  "Rodrigo Podoba": "assets/imagenes%20profe/Rodrigo.jpg",
+  "Daiana Cabello": "assets/imagenes%20profe/daiana.jpg",
+  "Macarena Moyano": "assets/imagenes%20profe/Macarena.jpg",
+  "Laura Piriz": "assets/imagenes%20profe/Laura.jpg",
+  "Sabrina Lara": "assets/imagenes%20profe/Sabrina.jpg",
+};
+
 const factIcons = {
   duration: "M8 3v3m8-3v3M5 9h14M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z",
   modality: "M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01",
@@ -281,8 +289,19 @@ if (course && content && notFound) {
 
   const teacherName = document.querySelector("#course-teacher");
   const teacherDescription = document.querySelector("#course-teacher-description");
+  const teacherPhoto = document.querySelector("#course-teacher-photo");
+  const teacherPhotoPlaceholder = document.querySelector(
+    "#course-teacher-photo-placeholder",
+  );
   if (course.teacher) {
     teacherName.textContent = course.teacher;
+    const photo = teacherPhotos[course.teacher];
+    if (photo) {
+      teacherPhoto.src = photo;
+      teacherPhoto.alt = `Foto de ${course.teacher}`;
+      teacherPhoto.hidden = false;
+      teacherPhotoPlaceholder.hidden = true;
+    }
   } else {
     teacherName.textContent = "Equipo docente";
   }
